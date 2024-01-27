@@ -1,0 +1,18 @@
+{
+	// UNRELATED
+
+	"json.format.enable": false, // Avoid Formatting of L13-L16
+
+	// RELATED
+
+	"gopls": {},
+
+	"[go]": {
+		"editor.defaultFormatter": "golang.go",
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode":
+			"file", // (default)
+			// "modifications" // BUG: DOESN'T FORMAT
+			// "modificationsIfAvailable" // BUG: USES "modifications" INSTEAD OF "file"
+	},
+}
